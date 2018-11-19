@@ -41,9 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 iv.setImageBitmap(imageBitmap);
 
                 String prefix;
-                //File image = File.createTempFile(prefix:"IMG",sufix:".jpg",directory:null);
-                //FileOutputStream out = new FileOutputStream(name: "imagen.jpg");
-               // imageBitmap.compress(Bitmap.CompressFormat.JPEG, qualiti)
+               /* try {
+                    //File image = File.createTempFile(prefix:"IMG",sufix:".jpg",directory:null);
+                    FileOutputStream out = new FileOutputStream(IMAGE_FILENAME, MODE_APPEND);
+                    imageBitmap.compress(Bitmap.CompressFormat.JPEG, quality:100, out);
+                    Log.v(tag: "FILE_OK",msg:"Arxiu OK");
+                }catch (Exception e){
+                    Log.v(tag:"FILE_ERROR")
+                }*/
             }
         }
     }
